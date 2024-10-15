@@ -8,7 +8,6 @@
 	<div class="ancho">
 		<div class="firma">
 			<div class="marca">						
-				<!-- <span>ucuuba swimwear colombia 2023</span> -->
 			</div>
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Firma footer') ) : ?>
 			<?php endif; ?>
@@ -23,9 +22,9 @@
 			setTimeout(() => {
 				new WppBtn([
 					{
-						number: 573206863274,
+						number: 570000000000,
 						title: 'Contacto',
-						message: '¡Hola Rapeluches🧸! Estoy en tu sitio web y requiero...'
+						message: 'Mensaje de contacto'
 					},
 				], {
 					title: '¡Hola! En que te podemos ayudar',

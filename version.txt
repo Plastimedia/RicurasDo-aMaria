@@ -27,3 +27,9 @@
 - paginas internas (page, single) sin ancho para una mejor de edición
 - imagen portada plasti Commerce
 
+##############################################
+
+// versión: 1.0.1
+// caracteristicas
+
+- limpiamos el tema para comenzar facilmente un desarrollo desde 0
