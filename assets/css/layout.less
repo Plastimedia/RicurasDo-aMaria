@@ -27,7 +27,7 @@ body {
   height: 100%;
   // padding-top: @alturaHeader;
   background: white;
-  color: #000;
+  color: #a02320;
   font-family: @fuenteComun;
   .font-size(1);
   text-align: left;
@@ -44,7 +44,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #a02320;
+  font-family: "Arima", sans-serif;
+  margin-bottom: 17px;
+}
 #splash {
   position: fixed;
   top: 0;
@@ -75,7 +83,7 @@ img {
   width: 45px;
   height: 45px;
   font-size: 0;
-  background-color: #98C12E;
+  background-color: #a02320;
   // color:black;
   cursor: pointer;
   position: fixed;
@@ -90,7 +98,7 @@ img {
   &::after {
     content: "";
     display: block;
-    border-top: 3.5px solid #3E3539;
+    border-top: 3.5px solid white;
     width: 17px;
     height: 14px;
     position: absolute;
@@ -111,7 +119,7 @@ img {
   }
 
   &:hover {
-    background-color: lighten(#98C12E, 10%);
+    background-color: lighten(#330906, 10%);
   }
 
   &:active {
@@ -1768,7 +1776,7 @@ footer {
             list-style: none;
 
             a {
-              color: #6A6A6A;
+              color: white;
               text-decoration: none;
               display: inline-block;
               .font-size(0.9);
@@ -1776,6 +1784,7 @@ footer {
               // padding-left: 7px;
               padding-top: 5px;
               padding-bottom: 5px;
+              font-weight: 500;
 
               &:hover {
                 padding-left: 12px;
@@ -2103,6 +2112,7 @@ body.page-template-template-sedes .contenido>.wp-block-columns {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
+  filter: invert(1)
 }
 
 .zoomContainer {
@@ -3120,5 +3130,70 @@ span.woocommerce-input-wrapper {
 .single-product {
   .encabezado {
     display: none;
+  }
+}
+.Quienes-somos{
+  background-color: #fff3e1;
+  padding: 50px;
+  
+  .content-somos{
+    margin-top: 50px;
+
+    .columna-dos{
+      position: relative;
+      top: -100px;
+
+      figure{
+        display: flex;
+        justify-content: center;
+      }
+      p{
+        padding: 10px 50px;
+      }
+    }
+  }
+}
+.Recetas{
+  background-image: url("@{imgurl}fondo-recetas.png");
+}
+.nuevos-productos{
+  margin-top: 100px;
+} 
+.info2, .info, .info-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.button-distribuidores{
+  background-color: #a02320;
+  border-radius: 5px;
+}
+.container-menu .container-menu-buscador nav.el-menu .menu-ppl ul .button-distribuidores a{
+  color: white;
+}
+.fijo header nav.el-menu .menu-ppl ul .button-distribuidores a{
+  color: white !important;
+}
+.text-banner{
+  position: absolute;
+  top: 200px;
+  left: 150px;
+
+  h1{
+    font-weight: 700;
+    font-size: xxx-large;
+    line-height: 1;
+  }
+  p{
+    font-weight: 300;
+    font-size: larger;
+    line-height: 1.5;
+  }
+  a{
+    color: white;
+    background-color: #a02320;
+    padding: 10px;
+    border-radius: 5px;
   }
 }

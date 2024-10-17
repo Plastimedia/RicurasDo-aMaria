@@ -110,6 +110,230 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDBImRTM.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1YTE-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX14TA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1PzA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1YTA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1UzA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1vzc-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1hjc-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1YTE-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX14TA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1PzA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1YTA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1UzA-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1vzc-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arima/v5/neIWzCqmt4Aup_qE1nFWqxI1RZX1hjc-pQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjNPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4ejMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4TbMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4VrMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4Y_LPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4ejLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4cHLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvao4CP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpYCP.ttf) format('truetype');
+}
 html,
 body,
 body div,
@@ -326,7 +550,7 @@ h3,
 h4,
 h5 {
   color: #000000;
-  font-family: "Nunito", sans-serif;
+  font-family: "Arima", sans-serif;
   margin-bottom: 17px;
 }
 h1 {
@@ -437,7 +661,7 @@ otros
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon', "Nunito", sans-serif !important;
+  font-family: 'icomoon', "Raleway", sans-serif !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -468,12 +692,14 @@ otros
 }
 .icon-map-pin:before {
   content: "\e906";
+  color: white;
 }
 .icon-share:before {
   content: "\e907";
 }
 .icon-mail:before {
   content: "\e945";
+  color: white;
 }
 .icon-bubble:before {
   content: "\e96b";
@@ -664,8 +890,8 @@ html::-webkit-scrollbar-thumb {
 body {
   height: 100%;
   background: white;
-  color: #000;
-  font-family: "Nunito", sans-serif;
+  color: #a02320;
+  font-family: "Raleway", sans-serif;
   font-size: 17px;
   font-size: 1rem;
   text-align: left;
@@ -677,6 +903,15 @@ body#sitioCorporativo main section.categorias {
 img {
   max-width: 100%;
   height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #a02320;
+  font-family: "Arima", sans-serif;
+  margin-bottom: 17px;
 }
 #splash {
   position: fixed;
@@ -707,7 +942,7 @@ img {
   width: 45px;
   height: 45px;
   font-size: 0;
-  background-color: #98C12E;
+  background-color: #a02320;
   cursor: pointer;
   position: fixed;
   bottom: 155px;
@@ -723,7 +958,7 @@ img {
 #ir-arriba::after {
   content: "";
   display: block;
-  border-top: 3.5px solid #3E3539;
+  border-top: 3.5px solid white;
   width: 17px;
   height: 14px;
   position: absolute;
@@ -742,7 +977,7 @@ img {
   transform: rotate(-45deg);
 }
 #ir-arriba:hover {
-  background-color: #afd54d;
+  background-color: #61110b;
 }
 #ir-arriba:active {
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
@@ -1128,7 +1363,7 @@ main.shopPage .las_subcategorias .ancho .contenido {
 main.shopPage .las_subcategorias .ancho .contenido h2 {
   font-weight: 600;
   position: relative;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 main.shopPage .las_subcategorias .ancho .contenido h2::before {
   content: '';
@@ -1177,7 +1412,7 @@ main.shopPage .las_subcategorias .ancho .las_categorias_hijas .categoria_hija im
           transform: scale(1.1);
 }
 main.shopPage .las_subcategorias .ancho .las_categorias_hijas .categoria_hija h3 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: black;
   font-size: 15.3px;
@@ -1268,7 +1503,7 @@ main.shopPage aside .content {
 main.shopPage aside h2 {
   color: black;
   font-weight: 700;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20.4px;
   font-size: 1.2rem;
   text-align: center;
@@ -1312,7 +1547,7 @@ main.shopPage aside .wc-block-product-categories.is-list > ul > li > a {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 main.shopPage aside .wc-block-product-categories.is-list > ul > li > a span {
   font-weight: 800;
@@ -1408,7 +1643,7 @@ main.shopPage section.contenido h1 {
   font-size: 30.6px;
   font-size: 1.8rem;
   color: #000000;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 main.shopPage section.contenido .term-description {
   display: none;
@@ -1567,7 +1802,7 @@ main.shopPage section.contenido .productPage .summary h1 {
   text-align: left;
   font-size: 30.6px;
   font-size: 1.8rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Arima", sans-serif;
   margin: 0;
   line-height: 1.8rem;
   padding-bottom: 0;
@@ -1607,7 +1842,7 @@ main.shopPage section.contenido .productPage .summary p.stock.in-stock {
   font-size: 0.8rem;
 }
 main.shopPage section.contenido .productPage .summary p strong {
-  font-family: "Nunito", sans-serif;
+  font-family: "Arima", sans-serif;
 }
 main.shopPage section.contenido .productPage .summary .woocommerce-product-details__short-description {
   color: black;
@@ -2268,7 +2503,7 @@ footer .ancho .columns div ul li {
   list-style: none;
 }
 footer .ancho .columns div ul li a {
-  color: #6A6A6A;
+  color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 15.3px;
@@ -2277,6 +2512,7 @@ footer .ancho .columns div ul li a {
   transition: all 0.3s;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-weight: 500;
 }
 footer .ancho .columns div ul li a:hover {
   padding-left: 12px;
@@ -2562,6 +2798,8 @@ body.page-template-template-sedes .contenido > .wp-block-columns {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 .zoomContainer {
   cursor: -webkit-zoom-in;
@@ -2651,14 +2889,14 @@ body.category.category-blog main {
 .single-post main p,
 .single-post main li {
   color: black;
-  font-family: "Nunito", sans-serif;
+  font-family: "Arima", sans-serif;
   font-weight: 100;
   font-size: 15.3px;
   font-size: 0.9rem;
 }
 .single-post main p strong,
 .single-post main li strong {
-  font-weight: "Nunito", sans-serif;
+  font-weight: "Arima", sans-serif;
   font-weight: 800;
 }
 .single-post main p {
@@ -2857,7 +3095,7 @@ main.main404 .wp-block-button a:hover {
   font-size: 17px;
   font-size: 1rem;
   padding: 10px 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
 }
 .single-post .two-columns img {
@@ -3542,6 +3780,80 @@ span.woocommerce-input-wrapper {
 .single-product .encabezado {
   display: none;
 }
+.Quienes-somos {
+  background-color: #fff3e1;
+  padding: 50px;
+}
+.Quienes-somos .content-somos {
+  margin-top: 50px;
+}
+.Quienes-somos .content-somos .columna-dos {
+  position: relative;
+  top: -100px;
+}
+.Quienes-somos .content-somos .columna-dos figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Quienes-somos .content-somos .columna-dos p {
+  padding: 10px 50px;
+}
+.Recetas {
+  background-image: url("../images/fondo-recetas.png");
+}
+.nuevos-productos {
+  margin-top: 100px;
+}
+.info2,
+.info,
+.info-somos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.button-distribuidores {
+  background-color: #a02320;
+  border-radius: 5px;
+}
+.container-menu .container-menu-buscador nav.el-menu .menu-ppl ul .button-distribuidores a {
+  color: white;
+}
+.fijo header nav.el-menu .menu-ppl ul .button-distribuidores a {
+  color: white !important;
+}
+.text-banner {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+.text-banner h1 {
+  font-weight: 700;
+  font-size: xxx-large;
+  line-height: 1;
+}
+.text-banner p {
+  font-weight: 300;
+  font-size: larger;
+  line-height: 1.5;
+}
+.text-banner a {
+  color: white;
+  background-color: #a02320;
+  padding: 10px;
+  border-radius: 5px;
+}
 .sticky-wrapper {
   max-height: 0;
   display: table;
@@ -3566,7 +3878,7 @@ header::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
+  height: 30px;
 }
 .fijo header {
   z-index: 100 !important;
@@ -3844,7 +4156,7 @@ header::before {
   padding: 7px 10px;
   font-size: 18.7px;
   font-size: 1.1rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: black;
   outline: none;
   text-align: center;
@@ -4120,7 +4432,7 @@ header::before {
   vertical-align: middle;
   font-size: 0px;
   font-size: 0rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   outline: none;
   text-align: center;
@@ -4251,12 +4563,12 @@ header::before {
   width: 42px;
   height: 42px;
   border-radius: 2px;
-  border: 2px solid white;
+  border: 2px solid #a02320;
   overflow: hidden;
   position: relative;
 }
 #btn_menu span {
-  background-color: white;
+  background-color: #a02320;
   width: 75%;
   height: 4px;
   display: block;
@@ -4657,14 +4969,6 @@ header::before {
   .contenido .datos-cont li {
     width: 100%;
   }
-  .category-post {
-    width: 66.66666666666667%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 20px;
-    margin: 10px -2px;
-    text-align: left;
-  }
   .servicios .wg-servicio {
     width: 50%;
   }
@@ -4940,7 +5244,7 @@ header::before {
     left: 0;
     right: 0;
     width: 100%;
-    background: #000000;
+    background: #a02320 !important;
     border-top: 1px solid #A5DBD6;
     padding: 5px 15px;
     z-index: 1000;
@@ -5344,7 +5648,7 @@ header::before {
     color: black;
     font-size: 34px;
     font-size: 2rem;
-    font-family: "Nunito", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .contenedor-slide-mobil .plastislider__slider .splide__track .splide__list .splide__slide .plastislider__slide .plastislider__contenido strong {
     color: black;
@@ -5983,10 +6287,6 @@ header::before {
     height: 45px !important;
     z-index: 200 !important;
   }
-  .container-menu .logo img {
-    -webkit-filter: invert(1) !important;
-            filter: invert(1) !important;
-  }
   .container-menu .container-menu-buscador {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6040,7 +6340,7 @@ header::before {
   }
   .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul {
     display: block;
-    background-color: #9E9E9E;
+    background-color: #a02320;
     height: 100%;
     padding-top: 100px;
     position: relative;
@@ -6289,16 +6589,14 @@ header::before {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .carrusel-descuentos .splide__pagination,
-  .nuevos-productos .splide__pagination,
-  .el-blog .splide__pagination {
-    display: none;
-  }
   main .splide--slide .splide__arrows .splide__arrow--next {
     right: -10px !important;
   }
   main .splide--slide .splide__arrows .splide__arrow--prev {
     left: -10px !important;
+  }
+  .text-banner {
+    display: none;
   }
 }
 @media screen and (max-width: 599px) {
