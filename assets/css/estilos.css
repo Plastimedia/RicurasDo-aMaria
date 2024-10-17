@@ -3586,7 +3586,7 @@ header::before {
   width: auto;
 }
 .fijo header nav.el-menu .menu-ppl ul li a {
-  color: white !important;
+  color: black !important;
 }
 .fijo header .options_shop .account:before,
 .fijo header .options_shop .cart .btn-cart {
@@ -3845,7 +3845,7 @@ header::before {
   font-size: 18.7px;
   font-size: 1.1rem;
   font-family: "Nunito", sans-serif;
-  color: white;
+  color: black;
   outline: none;
   text-align: center;
   font-weight: 300;
@@ -3855,7 +3855,7 @@ header::before {
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li:hover > a,
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li > a:focus,
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li.in-hover > a {
-  font-weight: 800;
+  font-weight: 700;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-shadow: 1px 1px black;
