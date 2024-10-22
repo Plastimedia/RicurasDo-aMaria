@@ -87,9 +87,3 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
-
-<!-- contador -->
-<div class="seccion_contador">
-    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Contador') ) : ?>
-    <?php endif; ?>
-</div>

@@ -20,10 +20,56 @@ $config = [
             'afterWidget' => '</div>'
         ],
         [
-            'name' => 'Ejemplo',
-            'beforeWidget' => '<li  class="claas_ej">',
-            'afterWidget' => '</li>'
+            'name' => 'Buscador',
+            'beforeWidget' => '',
+            'afterWidget' => ''
         ],
+        [
+            'name' => 'Carrito',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Nuestros Poductos',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Promociones',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Promociones Móvil',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Productos Destacados',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Quienes Somos info',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Quienes Somos',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],        
+        [
+            'name' => 'Footer',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        [
+            'name' => 'Firma footer',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
+        
     ],
     'menus' => [
         [

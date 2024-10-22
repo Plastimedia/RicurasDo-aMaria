@@ -2286,28 +2286,46 @@ main.main404 {
     top: 50% !important;
     transform: translateY(0);
     opacity: 1 !important;
-    background-image: url("@{imgurl}flecha.svg") !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-color: @primario !important;
+    background-image: none !important;
+    background-color: white !important; 
     // transform: translateY(-50%);
     width: 55px !important;
     height: 70px !important;
     // border-radius:  50px 0 0 50px;
     transition: all 0.5s;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-image: url("@{imgurl}flecha.svg") !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+      transition: all 0.2s;
+    }
 
     &.flex-prev {
       left: 0;
       transform: rotate(180deg) translateY(0);
+      border-radius: 45px 0 0 45px;
     }
 
     &.flex-next {
       right: 0;
+      border-radius: 45px 0 0 45px;
     }
 
     &:hover {
       background-color: darken(@cuarto, 5) !important;
       transition: all 0.5s;
+      &::after{
+        filter: none;
+        transition: all 0.2s;
+      }
     }
   }
 }
