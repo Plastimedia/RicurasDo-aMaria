@@ -80,6 +80,35 @@
                     }
                 }
             }
+            .splide__arrow svg{
+                display: none;
+            }
+            .splide__arrow--prev::after{
+                content: "";
+                background-image: url("@{imgurl}flecha.svg");
+                transform: scaleX(-1);
+                width: 50%;
+                height: 50%;
+                color: black;
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            .splide__arrow::after{
+                content: "";
+                background-image: url(../images/flecha.svg);
+                width: 50%;
+                height: 60%;
+                color: black;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            //splide slide
+            .splide__pagination li button{
+                display: none;
+            }
         }
     }
 }
@@ -207,6 +236,35 @@
                     }
                 }
             }
+            .splide__arrow svg{
+                display: none;
+            }
+            .splide__arrow--prev::after{
+                content: "";
+                background-image: url("@{imgurl}flecha.svg");
+                transform: scaleX(-1);
+                width: 50%;
+                height: 50%;
+                color: black;
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            .splide__arrow::after{
+                content: "";
+                background-image: url(../images/flecha.svg);
+                width: 50%;
+                height: 60%;
+                color: black;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+             //splide slide
+            .splide__pagination li button{
+                display: none;
+            }
         }
     }
 }
@@ -253,3 +311,6 @@
 }
 
 // recetas
+.recetas{
+    background-image: url("@{imgurl}fondo-recetas.png");
+}

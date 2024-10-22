@@ -4694,6 +4694,36 @@ header::before {
   color: #a02320;
   background-color: #fff3e1;
 }
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow svg {
+  display: none;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow--prev::after {
+  content: "";
+  background-image: url("../images/flecha.svg");
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 50%;
+  height: 50%;
+  color: black;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  padding: 0 12px;
+  background-repeat: no-repeat;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow::after {
+  content: "";
+  background-image: url(../images/flecha.svg);
+  width: 50%;
+  height: 60%;
+  color: black;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  padding: 0 12px;
+  background-repeat: no-repeat;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__pagination li button {
+  display: none;
+}
 .promociones img {
   width: 100%;
   height: auto;
@@ -4799,6 +4829,36 @@ header::before {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.destados .ancho .productos-destacod .splide__arrow svg {
+  display: none;
+}
+.destados .ancho .productos-destacod .splide__arrow--prev::after {
+  content: "";
+  background-image: url("../images/flecha.svg");
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 50%;
+  height: 50%;
+  color: black;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  padding: 0 12px;
+  background-repeat: no-repeat;
+}
+.destados .ancho .productos-destacod .splide__arrow::after {
+  content: "";
+  background-image: url(../images/flecha.svg);
+  width: 50%;
+  height: 60%;
+  color: black;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  padding: 0 12px;
+  background-repeat: no-repeat;
+}
+.destados .ancho .productos-destacod .splide__pagination li button {
+  display: none;
+}
 .quienes-somos {
   padding: 100px 0;
   background-color: #fdfaf1;
@@ -4828,6 +4888,9 @@ header::before {
   font-weight: 500;
   font-size: 18.7px;
   font-size: 1.1rem;
+}
+.recetas {
+  background-image: url("../images/fondo-recetas.png");
 }
 @media screen and (max-width: 1340px) {
   main section.categorias .ancho .grid-categorias .category .content,
