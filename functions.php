@@ -69,6 +69,11 @@ $config = [
             'beforeWidget' => '',
             'afterWidget' => ''
         ],
+        [
+            'name' => 'Recetas',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
         
     ],
     'menus' => [
