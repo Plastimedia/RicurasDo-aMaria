@@ -872,6 +872,7 @@ main {
       .productos-cantidades {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         li {
           padding: 5px;
@@ -1807,16 +1808,14 @@ footer {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
 
     p {
       margin: 0;
-      color: #6A6A6A;
+      color: white;
       padding: 0 10px;
       .font-size(1);
-      text-transform: uppercase;
     }
 
     span {
@@ -1863,10 +1862,46 @@ footer {
           }
         }
       }
+      #menu-redes{
+        display: inline-flex;
+      }
     }
   }
 }
-
+.menu-redes-container #menu-redes .face::before {
+  content: "";
+  width: 40px !important;
+  height: 40px;
+  background-image: url(../images/facebook.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+}
+.menu-redes-container #menu-redes .insta::before {
+  content: "";
+  width: 40px !important;
+  height: 40px;
+  background-image: url(../images/instagram.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+}
+.menu-redes-container #menu-redes li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 10px 0 10px;
+}
+#menu-redes{
+  display: inline-flex;
+}
 // // @Redes
 .menu-menu-redes-container {
   ul {
@@ -1925,7 +1960,6 @@ footer {
     }
   }
 }
-
 .menu-redes {
   div {
     ul {
@@ -2078,6 +2112,8 @@ header .ancho .options_shop>div.cart .content .box {
   position: relative;
   transition: all 0.5s;
   text-align: center;
+  color: white !important;
+  background-color: #a02320 !important;
   .font-size(0.9);
 
   &::before {
@@ -2492,7 +2528,9 @@ section.slider_info {
     text-align: center;
   }
 }
-
+.wp-block-woocommerce-cart{
+  margin: 0 100px;
+}
 .woocommerce-cart,
 .woocommerce-checkout {
   main .migas {
@@ -3312,4 +3350,80 @@ span.woocommerce-input-wrapper {
     border-color: #a02320;
 }
 }
+
 //formulario de contacto
+.wc-block-components-sidebar-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px 16px;
+  position: relative;
+}
+.wc-block-components-button:not(.is-link).outlined:hover {
+  background-color: #893836;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Estilos básicos para el formulario */
+.wpcf7 form {
+  max-width: 100%;
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos para los campos de entrada y textarea */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="number"],
+.wpcf7 input[type="date"],
+.wpcf7 textarea {
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  padding: 10px;
+  margin-bottom: 10px; /* Añade espacio entre los campos */
+  box-sizing: border-box; /* Asegura que el padding no exceda el ancho */
+}
+
+/* Estilos para los select y botones */
+.wpcf7 select,
+.wpcf7 input[type="submit"] {
+  width: 100%; /* Asegura que el botón se ajuste al contenedor */
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .wpcf7 form {
+      padding: 15px; /* Aumenta el padding en pantallas pequeñas */
+  }
+
+  .wpcf7 input[type="submit"] {
+      font-size: 16px; /* Ajusta el tamaño de fuente del botón */
+  }
+}
+
+/* Uso de Flexbox para alinear campos en filas */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-row .wpcf7-form-control {
+  flex: 1 1 calc(50% - 10px); /* Hace que cada campo ocupe el 50% del ancho */
+  min-width: 150px; /* Un ancho mínimo para evitar colapsos */
+}
+.content-leermas{
+  display: flex;
+  justify-content: center;
+  a.leermas_blog{
+    background-color: #a02320;
+    padding: 10px 50px;
+    color: white;
+    margin-top: 50px;
+  }
+}

@@ -396,11 +396,40 @@ body{
 // 		border-radius: 10px;
 // 	}
 // }
+.nuestros-productos .ancho .splide_nuestro_productos li .producto{
+	border: none !important;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+.nuestros-productos .ancho .splide_nuestro_productos li .producto .content-text {
+	position: relative !important;
+	padding: 15px 10px !important;
+	background: white !important;
+	// border-radius: 0 0 30px 30px;
+	margin-top: -13px;
+}
+.promociones {
+    display: none;
+  }
+  .promocionesmb {
+    display: block;
+}
+.destados .ancho .productos-destacod li .producto .content-text {
+    background-color: #a02320 !important;
+    border-radius: 0 0 20px 20px;
+    padding: 15px !important;
+    -webkit-box-shadow: inset 0 6px 5px #00000063;
+    box-shadow: inset 0 6px 5px #00000063;
+}
 main section.index_ofertas_categorias .productos_oferta .ofertas-todas{
 	z-index: 10;
 	.font-size(1);
 }
-
+main{
+	padding: 0;
+	padding-top: 0;
+}
 main section.index_ofertas_categorias .productos_oferta span.adorno1{
 	width: 50px;
 	height: 50px;
@@ -1716,7 +1745,7 @@ bottom: 80px;
 
 
 .container-menu .options_shop .cart .btn-cart, .container-menu .options_shop .account{
-	filter: invert(1);
+	filter: invert(1) !important;
 	margin: 0;
 	&::before{
 		margin: 0;
@@ -1864,4 +1893,19 @@ main .splide--slide .splide__arrows .splide__arrow--prev{
 	  border-color: #a02320;
   }
   }
+  #ModalSearch form div button {
+	background-color: #a02320 !important;
+}
+#ModalSearch form div input[type="search"] {
+	border: 2px solid #a02320!important;
+}
   //formulario de contacto
+  .wc-block-components-sidebar-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 16px;
+    position: relative;
+}
+.wp-block-woocommerce-cart{
+	margin: 0 50px;
+  }
