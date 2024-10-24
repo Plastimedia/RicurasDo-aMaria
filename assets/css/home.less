@@ -161,6 +161,7 @@
                     max-width: 300px;
                     box-shadow: 4px 4px 5px #00000094;
                     border-radius: 20px;
+                    margin: 0 auto;
 
                     .content {
                         position: relative;
@@ -313,4 +314,36 @@
 // recetas
 .recetas{
     background-image: url("@{imgurl}fondo-recetas.png");
+    padding: 100px 0;
+    .listadorecetas{
+        padding-top: 50px;
+        .receta{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            .img{
+                img{
+                    width: 300px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+            .content{
+                width: 350px;
+                h3{
+                    line-height: 1.5rem;
+                    a{
+                        font-weight: 700;
+                    }
+                }
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }

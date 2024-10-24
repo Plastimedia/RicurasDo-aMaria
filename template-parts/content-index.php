@@ -9,7 +9,7 @@
 
 
 <section class="nuestros-productos">
-  <div class="ancho">
+  <div class="ancho wow animate__animated animate__backInUp">
     <div class="info">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Nuestros Poductos')): ?>
       <?php endif; ?>

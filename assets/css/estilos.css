@@ -4761,6 +4761,7 @@ header::before {
   -webkit-box-shadow: 4px 4px 5px #00000094;
           box-shadow: 4px 4px 5px #00000094;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .destados .ancho .productos-destacod li .producto .content {
   position: relative;
@@ -4891,6 +4892,44 @@ header::before {
 }
 .recetas {
   background-image: url("../images/fondo-recetas.png");
+  padding: 100px 0;
+}
+.recetas .listadorecetas {
+  padding-top: 50px;
+}
+.recetas .listadorecetas .receta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recetas .listadorecetas .receta:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.recetas .listadorecetas .receta .img img {
+  width: 300px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.recetas .listadorecetas .receta .content {
+  width: 350px;
+}
+.recetas .listadorecetas .receta .content h3 {
+  line-height: 1.5rem;
+}
+.recetas .listadorecetas .receta .content h3 a {
+  font-weight: 700;
+}
+.recetas .listadorecetas .receta .content p {
+  font-weight: 500;
 }
 @media screen and (max-width: 1340px) {
   main section.categorias .ancho .grid-categorias .category .content,
