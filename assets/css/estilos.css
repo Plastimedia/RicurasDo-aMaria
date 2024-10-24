@@ -1666,8 +1666,6 @@ main.shopPage section.contenido .productos-cantidades {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 main.shopPage section.contenido .productos-cantidades li {
   padding: 5px;
@@ -1962,7 +1960,7 @@ main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button
   width: 50px;
   height: 30px;
   display: block;
-  color: #000000;
+  color: white;
   border-radius: 7px 0 0 7px;
   text-align: center;
   line-height: 8px;
@@ -1970,6 +1968,7 @@ main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border: 1px solid #000000;
+  background: #a02320;
 }
 main.shopPage section.contenido .productPage .summary .cart .quantity button:last-child,
 main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button:last-child {
@@ -2004,14 +2003,21 @@ main.shopPage section.contenido .productPage .summary .cart_b2b button.wpcbn-btn
 main.shopPage section.contenido .productPage .summary .cart button.single_add_to_cart_button,
 main.shopPage section.contenido .productPage .summary .cart_b2b button.single_add_to_cart_button {
   border-radius: 7px;
-  background-color: #E9DA7F;
+  background-color: #a02320;
   font-weight: 700;
-  color: #3E3539;
+  color: white;
 }
 main.shopPage section.contenido .productPage .summary .cart button.single_add_to_cart_button:hover::before,
 main.shopPage section.contenido .productPage .summary .cart_b2b button.single_add_to_cart_button:hover::before {
   -webkit-box-shadow: 0px 5px 6px 2px #fff3e1;
           box-shadow: 0px 5px 6px 2px #fff3e1;
+}
+main.shopPage section.contenido .productPage .summary .cart button.single_add_to_cart_button a,
+main.shopPage section.contenido .productPage .summary .cart_b2b button.single_add_to_cart_button a,
+main.shopPage section.contenido .productPage .summary .cart button.single_add_to_cart_button a:visited,
+main.shopPage section.contenido .productPage .summary .cart_b2b button.single_add_to_cart_button a:visited {
+  color: white;
+  text-decoration: none;
 }
 main.shopPage section.contenido .productPage .summary .cart button::before,
 main.shopPage section.contenido .productPage .summary .cart_b2b button::before {
@@ -2890,7 +2896,7 @@ body.category.category-blog main {
 .single-post main li {
   color: black;
   font-family: "Arima", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 15.3px;
   font-size: 0.9rem;
 }
@@ -3090,7 +3096,7 @@ main.main404 .wp-block-button a:hover {
   display: flex;
 }
 .two-columns > .uno {
-  width: 80%;
+  width: 100%;
 }
 .two-columns > .dos {
   text-align: center;
@@ -3103,6 +3109,7 @@ main.main404 .wp-block-button a:hover {
   position: sticky;
   border: 1px solid #eaeaee;
   border-radius: 8px;
+  display: none;
 }
 .two-columns > .dos h3 {
   line-height: 19px;
@@ -3310,6 +3317,10 @@ section.slider_info.corpo .metaslider {
 .woocommerce-cart .order-total bdi span,
 .woocommerce-checkout .order-total bdi span {
   font-weight: 800 !important;
+}
+.wp-block-woocommerce-checkout {
+  margin: 0 50px !important;
+  padding-top: 24px;
 }
 .woocommerce form.checkout_coupon {
   background-color: #eee;
@@ -3771,7 +3782,7 @@ span.woocommerce-input-wrapper {
 }
 .archive .producto,
 .single-product .producto {
-  background-color: #EFEFEF;
+  background-color: #a02320;
   border-radius: 15px;
 }
 .archive .producto .thumbnail::after,
@@ -3780,7 +3791,7 @@ span.woocommerce-input-wrapper {
 }
 .archive .producto h3 a,
 .single-product .producto h3 a {
-  color: #3E3539;
+  color: white;
   font-weight: 400;
   padding: 0 15px;
   font-size: 17px;
@@ -3789,19 +3800,71 @@ span.woocommerce-input-wrapper {
 .archive .producto .precios p,
 .single-product .producto .precios p {
   font-weight: 700;
-  color: #3E3539;
+  color: white;
   font-size: 20.4px;
   font-size: 1.2rem;
 }
 .archive .producto .botones2 .read,
 .single-product .producto .botones2 .read {
-  color: #3E3539;
-  background-color: #e1e888;
+  color: white;
+  background-color: #330906;
   font-size: 17px;
   font-size: 1rem;
   font-weight: 700;
   padding: 9px 20px;
   border-radius: 10px;
+}
+.archive .producto,
+.single-product .producto {
+  width: 250px;
+  padding: 2px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.producto .botones .read::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  width: 80%;
+  height: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+.producto .botones {
+  position: relative;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.botones a:first-of-type {
+  background-color: #330906;
+  border-radius: 10px;
+  color: white;
+  margin: 0 0 5px 0;
 }
 .single-product .encabezado {
   display: none;
@@ -3880,6 +3943,41 @@ span.woocommerce-input-wrapper {
   padding: 10px;
   border-radius: 5px;
 }
+.wp-block-contact-form-7-contact-form-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7 {
+  background-color: #f3e1;
+  padding: 50px;
+  border-radius: 10px;
+}
+.wp-block-contact-form-7-contact-form-selector form label {
+  font-weight: bold;
+}
+.wp-block-contact-form-7-contact-form-selector form label span input {
+  border-radius: 10px;
+  border: 1px solid #a02320;
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7-submit {
+  background-color: #a02320;
+  color: white;
+  border: none;
+  width: 50%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+.wp-block-contact-form-7-contact-form-selector .wpcf7 form.sent .wpcf7-response-output {
+  border-color: #a02320;
+}
 .sticky-wrapper {
   max-height: 0;
   display: table;
@@ -3924,12 +4022,7 @@ header::before {
   width: auto;
 }
 .fijo header nav.el-menu .menu-ppl ul li a {
-  color: black !important;
-}
-.fijo header .options_shop .account:before,
-.fijo header .options_shop .cart .btn-cart {
-  -webkit-filter: contrast(0) grayscale(1) brightness(0) invert(1) !important;
-          filter: contrast(0) grayscale(1) brightness(0) invert(1) !important;
+  color: black;
 }
 .fijo header .buscador .logo {
   display: none;
@@ -4077,7 +4170,7 @@ header::before {
   display: inline-block;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: #A5DBD6;
+  background-color: #a02320 !important;
   margin-left: 7px;
   font-size: 0;
   width: 60px;
@@ -4088,6 +4181,7 @@ header::before {
   background-size: 35%;
   border: none;
   outline: none;
+  margin-top: 20px;
 }
 .container-menu .container-menu-buscador .buscador .menu-btn-hiden {
   display: -webkit-box;
@@ -4193,10 +4287,9 @@ header::before {
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li:hover > a,
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li > a:focus,
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li.in-hover > a {
-  font-weight: 700;
+  font-weight: 500;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-shadow: 1px 1px black;
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-categorias {
   position: relative;
@@ -4338,7 +4431,7 @@ header::before {
   text-align: left;
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-categorias > ul.sub-menu > li > ul > li > a {
-  color: #111 !important;
+  color: white !important;
   text-align: left;
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-categorias > ul.sub-menu > li > ul > li > a:hover {
@@ -4405,7 +4498,7 @@ header::before {
   right: -5000px;
   top: -1px;
   list-style: none;
-  background-color: #68c0b1;
+  background-color: #a02320;
   opacity: 0;
   z-index: 100000;
   -webkit-transition: right 0s linear 0.6s, opacity 0.3s linear 0.3s;
@@ -4419,7 +4512,8 @@ header::before {
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-item-has-children li:hover > a,
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-item-has-children li a:focus {
-  background-color: #f4b0ba;
+  background-color: white;
+  color: black;
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li.menu-item-has-children ul {
   top: 100%;
@@ -4454,7 +4548,7 @@ header::before {
           align-items: center;
 }
 .container-menu .options_shop .account {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   font-size: 0px;
   font-size: 0rem;
@@ -4481,8 +4575,8 @@ header::before {
   background-size: 70%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-filter: contrast(0) grayscale(1) brightness(0) invert(1) !important;
-          filter: contrast(0) grayscale(1) brightness(0) invert(1) !important;
+  -webkit-filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%);
 }
 .container-menu .options_shop .wishlist {
   display: inline-block;
@@ -4530,7 +4624,7 @@ header::before {
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url('../images/cart.svg');
+  background-image: url('../images/icon_cart.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
@@ -4694,6 +4788,16 @@ header::before {
   color: #a02320;
   background-color: #fff3e1;
 }
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev {
+  left: -1em;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next {
+  right: -1em;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow {
+  background: white;
+  border: 2px solid #a02320;
+}
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrow svg {
   display: none;
 }
@@ -4829,6 +4933,16 @@ header::before {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.destados .ancho .productos-destacod .splide__arrow {
+  background: white;
+  border: 2px solid #a02320;
+}
+.destados .ancho .productos-destacod .splide__arrow .splide__arrow--prev {
+  left: -1em;
+}
+.destados .ancho .productos-destacod .splide__arrow .splide__arrow--next {
+  right: -1em;
 }
 .destados .ancho .productos-destacod .splide__arrow svg {
   display: none;
@@ -5856,6 +5970,20 @@ header::before {
   }
   main.shopPage .contenido {
     width: 100%;
+  }
+  main.shopPage section.contenido .productos-cantidades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.shopPage section.contenido .productos-cantidades li {
+    padding: 5px;
+    width: auto;
+    margin: 0 !important;
   }
   main.shopPage section.contenido .productPage .lasimagenes {
     width: 100%;
@@ -6932,6 +7060,41 @@ header::before {
   }
   .text-banner {
     display: none;
+  }
+  .wp-block-contact-form-7-contact-form-selector {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wp-block-contact-form-7-contact-form-selector .wpcf7 {
+    background-color: #f3e1;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .wp-block-contact-form-7-contact-form-selector form label {
+    font-weight: bold;
+  }
+  .wp-block-contact-form-7-contact-form-selector form label span input {
+    border-radius: 10px;
+    border: 1px solid #a02320;
+  }
+  .wp-block-contact-form-7-contact-form-selector .wpcf7-submit {
+    background-color: #a02320;
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .wp-block-contact-form-7-contact-form-selector .wpcf7 form.sent .wpcf7-response-output {
+    border-color: #a02320;
   }
 }
 @media screen and (max-width: 599px) {

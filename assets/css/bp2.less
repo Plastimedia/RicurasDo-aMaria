@@ -631,7 +631,17 @@ main.shopPage{
 		width: 100%;
 	}
 }
+main.shopPage section.contenido .productos-cantidades {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
+  li {
+	padding: 5px;
+	width: auto;
+	margin: 0 !important;
+  }
+}
 main.shopPage section.contenido .productPage .lasimagenes{
 	width: 100%;
 }
@@ -1823,3 +1833,35 @@ main .splide--slide .splide__arrows .splide__arrow--prev{
 .text-banner{
 	display: none;
 }
+//Formulario de contacto
+.wp-block-contact-form-7-contact-form-selector{
+	display: flex;
+	justify-content: center;
+  
+	.wpcf7{
+	  background-color: #f3e1;
+	  padding: 50px;
+	  border-radius: 10px;
+	}
+	form label{
+	  font-weight: bold;
+	}
+	form label span input{
+	  border-radius: 10px;
+	border: 1px solid #a02320;
+	}
+	.wpcf7-submit{
+	  background-color: #a02320;
+	  color: white;
+	  border: none;
+	  width: 50%;
+	  padding: 5px;
+	  display: flex;
+	  margin: auto;
+	  border-radius: 5px;
+	}
+	.wpcf7 form.sent .wpcf7-response-output {
+	  border-color: #a02320;
+  }
+  }
+  //formulario de contacto

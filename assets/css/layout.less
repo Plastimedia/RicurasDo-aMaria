@@ -872,7 +872,6 @@ main {
       .productos-cantidades {
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
 
         li {
           padding: 5px;
@@ -1215,13 +1214,15 @@ main {
                 width: 50px;
                 height: 30px;
                 display: block;
-                color: @tercero;
+                color: white;
                 border-radius: 7px 0 0 7px;
                 text-align: center;
                 line-height: 8px;
                 cursor: pointer;
+                -webkit-transition: all 0.5s;
                 transition: all 0.5s;
-                border: 1px solid @tercero;
+                border: 1px solid #000000;
+                background: #a02320;
 
                 &:last-child {
                   border-radius: 0 7px 7px 0;
@@ -1257,9 +1258,9 @@ main {
 
               &.single_add_to_cart_button {
                 border-radius: 7px;
-                background-color: #E9DA7F;
+                background-color: #a02320;
                 font-weight: 700;
-                color: #3E3539;
+                color: white;
 
                 &:hover {
 
@@ -1267,6 +1268,10 @@ main {
                     box-shadow: 0px 5px 6px 2px @secundario;
                   }
                 }
+                a, a:visited {
+                  color: white;
+                  text-decoration: none;
+              }
               }
 
               &::before {
@@ -2189,7 +2194,7 @@ body.category.category-blog main {
     li {
       color: black;
       font-family: @fuenteSuperEspecial;
-      font-weight: 100;
+      font-weight: 500;
       .font-size(0.9);
 
       strong {
@@ -2340,7 +2345,7 @@ main.main404 {
 }
 
 .two-columns>.uno {
-  width: 80%;
+  width: 100%;
 }
 
 .two-columns>.dos {
@@ -2352,6 +2357,7 @@ main.main404 {
   position: sticky;
   border: 1px solid #eaeaee;
   border-radius: 8px;
+  display: none;
 
   h3 {
     line-height: 19px;
@@ -2615,6 +2621,10 @@ section.slider_info {
 }
 
 // el checkout
+.wp-block-woocommerce-checkout {
+  margin: 0 50px !important;
+  padding-top: 24px;
+}
 .woocommerce form.checkout_coupon {
   background-color: #eee;
   border-radius: 10px;
@@ -3114,7 +3124,7 @@ span.woocommerce-input-wrapper {
 .archive,
 .single-product {
   .producto {
-    background-color: #EFEFEF;
+    background-color: #a02320;
     border-radius: 15px;
 
     .thumbnail::after {
@@ -3122,7 +3132,7 @@ span.woocommerce-input-wrapper {
     }
 
     h3 a {
-      color: #3E3539;
+      color: white;
       font-weight: 400;
       padding: 0 15px;
       .font-size(1)
@@ -3130,21 +3140,76 @@ span.woocommerce-input-wrapper {
 
     .precios p {
       font-weight: 700;
-      color: #3E3539;
+      color: white;
       .font-size(1.2)
     }
 
     .botones2 .read {
-      color: #3E3539;
-      background-color: rgb(225, 232, 136);
+      color: white;
+      background-color: #330906;
       .font-size(1);
       font-weight: 700;
       padding: 9px 20px;
       border-radius: 10px;
     }
+    
+  }
+  .producto{
+    width: 250px;
+    padding: 2px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
   }
 }
-
+// .producto .botones2 {
+//   position: relative;
+//   opacity: 1;
+// }
+.producto .botones .read::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  width: 80%;
+  height: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+.producto .botones {
+  position: relative;
+  right: 0;
+  bottom: 5px;
+  left: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.botones a:first-of-type {
+  background-color: #330906;
+  border-radius: 10px;
+  color: white;
+  margin: 0 0 5px 0;
+}
 .single-product {
   .encabezado {
     display: none;
@@ -3215,3 +3280,36 @@ span.woocommerce-input-wrapper {
     border-radius: 5px;
   }
 }
+
+//Formulario de contacto
+.wp-block-contact-form-7-contact-form-selector{
+  display: flex;
+  justify-content: center;
+
+  .wpcf7{
+    background-color: #f3e1;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  form label{
+    font-weight: bold;
+  }
+  form label span input{
+    border-radius: 10px;
+  border: 1px solid #a02320;
+  }
+  .wpcf7-submit{
+    background-color: #a02320;
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .wpcf7 form.sent .wpcf7-response-output {
+    border-color: #a02320;
+}
+}
+//formulario de contacto
