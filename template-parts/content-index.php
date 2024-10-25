@@ -192,6 +192,9 @@
       endif;
       ?>
     </div>
+    <div class="content-leermas">
+      <a href="#" class="leermas_blog">Leer más</a>
+    </div>
   </div>
 </section>
 

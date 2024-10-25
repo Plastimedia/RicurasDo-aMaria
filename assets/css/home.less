@@ -105,6 +105,7 @@
                 filter: invert(1);
                 padding: 0 12px;
                 background-repeat: no-repeat;
+                filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
             }
             .splide__arrow::after{
                 content: "";
@@ -116,6 +117,7 @@
                 filter: invert(1);
                 padding: 0 12px;
                 background-repeat: no-repeat;
+                filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
             }
             //splide slide
             .splide__pagination li button{
@@ -259,6 +261,7 @@
                     right: -1em;
                 }
             }
+
             .splide__arrow svg{
                 display: none;
             }
@@ -272,6 +275,7 @@
                 filter: invert(1);
                 padding: 0 12px;
                 background-repeat: no-repeat;
+                filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
             }
             .splide__arrow::after{
                 content: "";
@@ -283,6 +287,7 @@
                 filter: invert(1);
                 padding: 0 12px;
                 background-repeat: no-repeat;
+                filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
             }
              //splide slide
             .splide__pagination li button{
@@ -291,9 +296,23 @@
         }
     }
 }
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow:hover {
+    background-color: #a02320; /* Fondo rojo cuando pasas el cursor */
+}
 
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev:hover::after,
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next:hover::after {
+    filter: invert(0); /* Flecha blanca al hacer hover */
+}
 
+.destados .ancho .productos-destacod .splide__arrow:hover {
+    background-color: #a02320; /* Fondo rojo cuando pasas el cursor */
+}
 
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--prev:hover::after,
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--next:hover::after {
+    filter: invert(0); /* Flecha blanca al hacer hover */
+}
 
 // quienes somos
 
@@ -337,6 +356,7 @@
 .recetas{
     background-image: url("@{imgurl}fondo-recetas.png");
     padding: 100px 0;
+    background-attachment: fixed;
     .listadorecetas{
         padding-top: 50px;
         .receta{

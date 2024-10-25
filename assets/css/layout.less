@@ -18,7 +18,7 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: @tercero;
+    background-color: #a02320;
     border-radius: 5px;
   }
 }
@@ -465,9 +465,6 @@ main {
       }
     }
   }
-
-
-
   &.shopPage {
     // padding: 0;
     padding-bottom: 60px;
@@ -1783,6 +1780,7 @@ footer {
             width: 100%;
             margin: 2px auto;
             list-style: none;
+            display: inline-flex;
 
             a {
               color: white;
@@ -1904,6 +1902,9 @@ footer {
 }
 #menu-redes{
   display: inline-flex;
+}
+#menu-contacto{
+  line-height: 50px;
 }
 // // @Redes
 .menu-menu-redes-container {
@@ -2156,7 +2157,8 @@ body.page-template-template-sedes .contenido>.wp-block-columns {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  filter: invert(1)
+  filter: invert(1);
+  margin-right: 10px;
 }
 
 .zoomContainer {
@@ -3279,6 +3281,7 @@ span.woocommerce-input-wrapper {
 }
 .Recetas{
   background-image: url("@{imgurl}fondo-recetas.png");
+  background-attachment: fixed
 }
 .nuevos-productos{
   margin-top: 100px;
@@ -3359,6 +3362,14 @@ span.woocommerce-input-wrapper {
     color: #555;
     background-color: #f0f1f3;
 }
+.formulario-dos-columnas .form-group input[type="submit"]{
+  background-color: #a02320;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 20px;
+}
 .formulario-dos-columnas .form-group textarea {
   padding: 10px;
   border: 1px solid #ccc;
@@ -3379,5 +3390,7 @@ span.woocommerce-input-wrapper {
     padding: 10px 50px;
     color: white;
     margin-top: 50px;
+    font-weight: 500;
+    border-radius: 20px;
   }
 }

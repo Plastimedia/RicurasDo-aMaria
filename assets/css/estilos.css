@@ -693,6 +693,7 @@ otros
 .icon-map-pin:before {
   content: "\e906";
   color: white;
+  margin-right: 10px;
 }
 .icon-share:before {
   content: "\e907";
@@ -700,6 +701,7 @@ otros
 .icon-mail:before {
   content: "\e945";
   color: white;
+  margin-right: 10px;
 }
 .icon-bubble:before {
   content: "\e96b";
@@ -888,7 +890,7 @@ html::-webkit-scrollbar-track {
   background-color: white;
 }
 html::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: #a02320;
   border-radius: 5px;
 }
 body {
@@ -2516,6 +2518,9 @@ footer .ancho .columns div ul li {
   width: 100%;
   margin: 2px auto;
   list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 footer .ancho .columns div ul li a {
   color: white;
@@ -2633,6 +2638,9 @@ footer .firma .menu-redes-container #menu-redes {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+#menu-contacto {
+  line-height: 50px;
 }
 .menu-menu-redes-container ul {
   list-style: none;
@@ -2856,6 +2864,7 @@ body.page-template-template-sedes .contenido > .wp-block-columns {
   display: inline-block;
   -webkit-filter: invert(1);
           filter: invert(1);
+  margin-right: 10px;
 }
 .zoomContainer {
   cursor: -webkit-zoom-in;
@@ -3946,6 +3955,7 @@ span.woocommerce-input-wrapper {
 }
 .Recetas {
   background-image: url("../images/fondo-recetas.png");
+  background-attachment: fixed;
 }
 .nuevos-productos {
   margin-top: 100px;
@@ -4036,6 +4046,14 @@ span.woocommerce-input-wrapper {
   color: #555;
   background-color: #f0f1f3;
 }
+.formulario-dos-columnas .form-group input[type="submit"] {
+  background-color: #a02320;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 20px;
+}
 .formulario-dos-columnas .form-group textarea {
   padding: 10px;
   border: 1px solid #ccc;
@@ -4060,6 +4078,8 @@ span.woocommerce-input-wrapper {
   padding: 10px 50px;
   color: white;
   margin-top: 50px;
+  font-weight: 500;
+  border-radius: 20px;
 }
 .sticky-wrapper {
   max-height: 0;
@@ -4896,6 +4916,8 @@ header::before {
           filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrow::after {
   content: "";
@@ -4907,6 +4929,8 @@ header::before {
   filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__pagination li button {
   display: none;
@@ -5042,6 +5066,8 @@ header::before {
           filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .destados .ancho .productos-destacod .splide__arrow::after {
   content: "";
@@ -5053,9 +5079,31 @@ header::before {
   filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .destados .ancho .productos-destacod .splide__pagination li button {
   display: none;
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow:hover {
+  background-color: #a02320;
+  /* Fondo rojo cuando pasas el cursor */
+}
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev:hover::after,
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next:hover::after {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  /* Flecha blanca al hacer hover */
+}
+.destados .ancho .productos-destacod .splide__arrow:hover {
+  background-color: #a02320;
+  /* Fondo rojo cuando pasas el cursor */
+}
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--prev:hover::after,
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--next:hover::after {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  /* Flecha blanca al hacer hover */
 }
 .quienes-somos {
   padding: 100px 0;
@@ -5090,6 +5138,7 @@ header::before {
 .recetas {
   background-image: url("../images/fondo-recetas.png");
   padding: 100px 0;
+  background-attachment: fixed;
 }
 .recetas .listadorecetas {
   padding-top: 50px;
