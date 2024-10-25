@@ -4081,6 +4081,22 @@ span.woocommerce-input-wrapper {
   font-weight: 500;
   border-radius: 20px;
 }
+#title-resondoski {
+  display: block;
+  position: relative;
+  width: 1024px;
+  height: 100px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+#title-resondoski span {
+  position: absolute;
+  height: 612px;
+  width: 30px;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  color: black;
+}
 .sticky-wrapper {
   max-height: 0;
   display: table;
@@ -4106,6 +4122,16 @@ header::before {
   display: -ms-flexbox;
   display: flex;
   height: 30px;
+}
+header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 2%;
+  bottom: 25%;
+  width: 70%;
+  height: 2px;
+  background-color: #95a1bb;
 }
 .fijo header {
   z-index: 100 !important;
@@ -4240,6 +4266,7 @@ header::before {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-top: 15px;
 }
 .container-menu .container-menu-buscador .buscador form label {
   display: none;
@@ -4248,43 +4275,90 @@ header::before {
   padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border: none;
   outline: none;
+  border: 2px solid #95a1bb;
+  border-right-color: transparent;
+  border-right-width: 0;
+  color: #95a1bb;
+  font-weight: 700;
 }
 .container-menu .container-menu-buscador .buscador form div input[type="search"]::-webkit-input-placeholder {
   font-style: italic;
-  color: #A5DBD6;
+  color: #95a1bb;
+  font-weight: 700;
+  font-size: 15.3px;
+  font-size: 0.9rem;
 }
 .container-menu .container-menu-buscador .buscador form div input[type="search"]:-moz-placeholder {
   font-style: italic;
-  color: #A5DBD6;
+  color: #95a1bb;
+  font-weight: 700;
+  font-size: 15.3px;
+  font-size: 0.9rem;
 }
 .container-menu .container-menu-buscador .buscador form div input[type="search"]::-moz-placeholder {
   font-style: italic;
-  color: #A5DBD6;
+  color: #95a1bb;
+  font-weight: 700;
+  font-size: 15.3px;
+  font-size: 0.9rem;
 }
 .container-menu .container-menu-buscador .buscador form div input[type="search"]:-ms-input-placeholder {
   font-style: italic;
-  color: #A5DBD6;
+  color: #95a1bb;
+  font-weight: 700;
+  font-size: 15.3px;
+  font-size: 0.9rem;
+}
+.container-menu .container-menu-buscador .buscador form div input[type="search"]:placeholder {
+  font-style: italic;
+  color: #95a1bb !important;
+  font-weight: 700;
+  font-size: 15.3px;
+  font-size: 0.9rem;
 }
 .container-menu .container-menu-buscador .buscador form div button {
   display: inline-block;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color: #a02320 !important;
-  margin-left: 7px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ffffff !important;
+  margin-left: 0px;
   font-size: 0;
   width: 60px;
   height: 41px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 2px solid #95a1bb;
+  border-left-color: transparent;
+  position: relative;
+  border-left-width: 0;
+}
+.container-menu .container-menu-buscador .buscador form div button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../images/search.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35%;
-  border: none;
-  outline: none;
-  margin-top: 20px;
+  -webkit-filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+}
+.container-menu .container-menu-buscador .buscador form div button:hover {
+  background-color: #a02320 !important;
+}
+.container-menu .container-menu-buscador .buscador form div button:hover::before {
+  -webkit-filter: none;
+          filter: none;
 }
 .container-menu .container-menu-buscador .buscador .menu-btn-hiden {
   display: -webkit-box;
@@ -4380,7 +4454,7 @@ header::before {
   font-size: 15.3px;
   font-size: 0.9rem;
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: #363940;
   outline: none;
   text-align: center;
   font-weight: 700;
@@ -4393,6 +4467,7 @@ header::before {
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl ul li.in-hover > a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: #a02320;
 }
 .container-menu .container-menu-buscador nav.el-menu .menu-ppl li.menu-categorias {
   position: relative;
@@ -4649,6 +4724,7 @@ header::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 15px;
 }
 .container-menu .options_shop .account {
   display: none;
@@ -4734,6 +4810,8 @@ header::before {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
+  -webkit-filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
 }
 .container-menu .options_shop .cart .btn-cart button {
   position: absolute;
@@ -4746,7 +4824,7 @@ header::before {
   display: none;
 }
 .container-menu .options_shop .cart .btn-cart .wc-block-mini-cart__badge {
-  display: block;
+  display: none;
   width: 20px;
   height: 20px;
   background-color: #CD8552;
@@ -7277,6 +7355,16 @@ header::before {
   }
   .wp-block-woocommerce-cart {
     margin: 0 50px;
+  }
+  header::after {
+    display: none;
+  }
+  .page-template-template-contactanos-formulario .formulario-dos-columnas {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .page-template-template-contactanos-formulario iframe {
+    width: 100%;
   }
 }
 @media screen and (max-width: 599px) {

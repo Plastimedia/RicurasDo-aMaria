@@ -74,6 +74,11 @@ $config = [
             'beforeWidget' => '',
             'afterWidget' => ''
         ],
+        [
+            'name' => 'Barra lateral de navegación',
+            'beforeWidget' => '',
+            'afterWidget' => ''
+        ],
         
     ],
     'menus' => [
@@ -84,7 +89,11 @@ $config = [
         [
             'slug' => 'menu-redes',
             'name' => 'Redes'
-        ]
+        ],
+        [
+            'slug' => 'menu-tienda-comercial',
+            'name' => 'Menú Tienda Comercial'
+        ],
     ],
     // edicion de post
     'editor-clasico' => false,

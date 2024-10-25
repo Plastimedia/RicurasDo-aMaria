@@ -28,6 +28,17 @@ header::before {
 	display: flex;
 	height: 30px;
 }
+header::after{
+	content: '';
+	display: block;
+	position: absolute;
+	right: 2%;
+	bottom: 25%;
+	width: 70%;
+	height: 2px;
+	background-color: #95a1bb;
+
+}
 
 .fijo header {
 	z-index: 100 !important;
@@ -175,6 +186,7 @@ header::before {
 
 			form {
 				flex: 1;
+				padding-top: 15px;
 
 				label {
 					display: none;
@@ -185,48 +197,91 @@ header::before {
 						padding-left: 20px;
 						padding-top: 5px;
 						padding-bottom: 5px;
-						border-top-left-radius: 25px;
-						border-bottom-left-radius: 25px;
+						border-top-left-radius: 10px;
+						border-bottom-left-radius: 10px;
 						border: none;
 						outline: none;
+						border: 2px solid #95a1bb;
+						border-right-color: transparent;
+						border-right-width: 0;
+						color: #95a1bb;
+						font-weight: 700;
 
 						&::-webkit-input-placeholder {
 							font-style: italic;
-							color: #A5DBD6;
+							color: #95a1bb;
+							font-weight: 700;
+							.font-size(0.9)
 						}
 
 						&:-moz-placeholder {
 							font-style: italic;
-							color: #A5DBD6;
+							color: #95a1bb;
+							font-weight: 700;
+							.font-size(0.9)
 						}
 
 						&::-moz-placeholder {
 							font-style: italic;
-							color: #A5DBD6;
+							color: #95a1bb;
+							font-weight: 700;
+							.font-size(0.9)
 						}
 
 						&:-ms-input-placeholder {
 							font-style: italic;
-							color: #A5DBD6;
+							color: #95a1bb;
+							font-weight: 700;
+							.font-size(0.9)
+						}
+
+						&:placeholder {
+							font-style: italic;
+							color: #95a1bb !important;
+							font-weight: 700;
+							.font-size(0.9)
 						}
 					}
 
 					button {
 						display: inline-block;
-						border-top-right-radius: 25px;
-						border-bottom-right-radius: 25px;
-						background-color: #a02320 !important;
-						margin-left: 7px;
+						border-top-right-radius: 10px;
+						border-bottom-right-radius: 10px;
+						background-color: #ffffff !important;
+						margin-left: 0px;
 						font-size: 0;
 						width: 60px;
 						height: 41px;
-						background-image: url('@{imgurl}search.svg');
-						background-repeat: no-repeat;
-						background-position: center;
-						background-size: 35%;
+
 						border: none;
 						outline: none;
-						margin-top: 20px;
+						transition: all 0.5s;
+						border: 2px solid #95a1bb;
+						border-left-color: transparent;
+						position: relative;
+						border-left-width: 0;
+
+						&::before {
+							content: '';
+							position: absolute;
+							display: block;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background-image: url('@{imgurl}search.svg');
+							background-repeat: no-repeat;
+							background-position: center;
+							background-size: 35%;
+							filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+						}
+
+						&:hover {
+							&::before{
+								filter: none;
+							}
+							background-color: @primario !important;
+						}
 					}
 				}
 			}
@@ -331,7 +386,7 @@ header::before {
 							padding: 7px 10px;
 							.font-size(0.9);
 							font-family: @fuenteComun;
-							color: black;
+							color: #363940;
 							outline: none;
 							text-align: center;
 							font-weight: 700;
@@ -344,6 +399,7 @@ header::before {
 						&.in-hover>a {
 							// font-weight: 500;
 							transition: all 0.5s;
+							color: @primario;
 						}
 					}
 
@@ -619,7 +675,7 @@ header::before {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-
+		padding-bottom: 15px;
 		.account {
 
 			display: none;
@@ -710,7 +766,7 @@ header::before {
 				transition: all 0.2s;
 				position: relative;
 
-				// filter: contrast(0) grayscale(1) brightness(0) ;
+				filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
 				button {
 					position: absolute;
 					top: 0;
@@ -724,7 +780,7 @@ header::before {
 				}
 
 				.wc-block-mini-cart__badge {
-					display: block;
+					display: none;
 					width: 20px;
 					height: 20px;
 					background-color: #CD8552;
