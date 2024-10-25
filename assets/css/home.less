@@ -259,6 +259,7 @@
                     right: -1em;
                 }
             }
+
             .splide__arrow svg{
                 display: none;
             }
@@ -291,9 +292,23 @@
         }
     }
 }
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrow:hover {
+    background-color: #a02320; /* Fondo rojo cuando pasas el cursor */
+}
 
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev:hover::after,
+.nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next:hover::after {
+    filter: invert(0); /* Flecha blanca al hacer hover */
+}
 
+.destados .ancho .productos-destacod .splide__arrow:hover {
+    background-color: #a02320; /* Fondo rojo cuando pasas el cursor */
+}
 
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--prev:hover::after,
+.destados .ancho .productos-destacod .splide__arrows .splide__arrow--next:hover::after {
+    filter: invert(0); /* Flecha blanca al hacer hover */
+}
 
 // quienes somos
 
@@ -337,6 +352,7 @@
 .recetas{
     background-image: url("@{imgurl}fondo-recetas.png");
     padding: 100px 0;
+    background-attachment: fixed;
     .listadorecetas{
         padding-top: 50px;
         .receta{
