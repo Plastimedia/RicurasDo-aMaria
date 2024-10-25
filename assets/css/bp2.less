@@ -47,10 +47,10 @@ header .ancho {
 		width: 100%;
 	}
 
-	//category post
-	.category-post {
-		.my-column(8, 20px);
-  	}
+	// //category post
+	// .category-post {
+	// 	.my-column(8, 20px);
+  	// }
 	//Servicios
 	.servicios {
 		.wg-servicio {
@@ -209,7 +209,9 @@ main .blog .ancho .don-loop .bloques {
     width: 100%;
     margin: 0 auto;
 }
-
+.mainHome{
+	padding: 0 !important;
+}
 
 
 .contenedor-slide-mobil .metaslider {
@@ -328,7 +330,7 @@ header .ancho .options_shop{
 	left: 0;
 	right: 0;
 	width: 100%;
-	background: @primario;
+	background: #a02320 !important;
 	border-top: 1px solid @quinto;
 	padding: 5px 15px;
 	z-index: 1000;
@@ -396,11 +398,43 @@ body{
 // 		border-radius: 10px;
 // 	}
 // }
+.nuestros-productos .ancho .splide_nuestro_productos li .producto{
+	border: none !important;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+.nuestros-productos .ancho .splide_nuestro_productos li .producto .content-text {
+	position: relative !important;
+	padding: 15px 10px !important;
+	background: white !important;
+	// border-radius: 0 0 30px 30px;
+	margin-top: -13px;
+}
+.promociones {
+    display: none;
+  }
+  .promocionesmb {
+    display: block;
+}
+.destados .ancho .productos-destacod li .producto .content-text {
+    background-color: #a02320 !important;
+    border-radius: 0 0 20px 20px;
+    padding: 15px !important;
+    -webkit-box-shadow: inset 0 6px 5px #00000063;
+    box-shadow: inset 0 6px 5px #00000063;
+}
 main section.index_ofertas_categorias .productos_oferta .ofertas-todas{
 	z-index: 10;
 	.font-size(1);
 }
-
+main{
+	padding: 0;
+	padding-top: 0;
+	.mainHome{
+		padding: 0 !important;
+	}
+}
 main section.index_ofertas_categorias .productos_oferta span.adorno1{
 	width: 50px;
 	height: 50px;
@@ -631,7 +665,17 @@ main.shopPage{
 		width: 100%;
 	}
 }
+main.shopPage section.contenido .productos-cantidades {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
+  li {
+	padding: 5px;
+	width: auto;
+	margin: 0 !important;
+  }
+}
 main.shopPage section.contenido .productPage .lasimagenes{
 	width: 100%;
 }
@@ -1476,9 +1520,9 @@ main.shopPage section.contenido .productPage .summary h1{
 	.container-menu .container-menu-buscador .buscador{
 		// display: none;
 	}
-	.container-menu .logo img{
-		filter:  invert(1) !important
-	}
+	// .container-menu .logo img{
+	// 	filter:  invert(1) !important
+	// }
 	header .ancho > .logo{
 		// display: none !important;
 	}
@@ -1535,7 +1579,7 @@ border: 1px solid @primario;
 }
  ul{
 	display: block;
-	background-color: #9E9E9E;
+	background-color: #a02320;
 	//background-color: fade(@primario, 70);
 	height: 100%;
 	padding-top: 100px;
@@ -1706,7 +1750,7 @@ bottom: 80px;
 
 
 .container-menu .options_shop .cart .btn-cart, .container-menu .options_shop .account{
-	filter: invert(1);
+	filter: invert(1) !important;
 	margin: 0;
 	&::before{
 		margin: 0;
@@ -1806,12 +1850,12 @@ main section.categorias{
 	transform: translateY(0);
 }
 
-.carrusel-descuentos .splide__pagination,
-.nuevos-productos .splide__pagination,
-.el-blog .splide__pagination,
-{
-	display: none;
-}
+// .carrusel-descuentos .splide__pagination,
+// .nuevos-productos .splide__pagination,
+// .el-blog .splide__pagination,
+// {
+// 	display: none;
+// }
 
 
 main .splide--slide .splide__arrows .splide__arrow--next{
@@ -1820,3 +1864,53 @@ main .splide--slide .splide__arrows .splide__arrow--next{
 main .splide--slide .splide__arrows .splide__arrow--prev{
 	left: -10px !important;
 }
+.text-banner{
+	display: none;
+}
+//Formulario de contacto
+.wp-block-contact-form-7-contact-form-selector{
+	display: flex;
+	justify-content: center;
+  
+	.wpcf7{
+	  background-color: #f3e1;
+	  padding: 50px;
+	  border-radius: 10px;
+	}
+	form label{
+	  font-weight: bold;
+	}
+	form label span input{
+	  border-radius: 10px;
+	border: 1px solid #a02320;
+	}
+	.wpcf7-submit{
+	  background-color: #a02320;
+	  color: white;
+	  border: none;
+	  width: 50%;
+	  padding: 5px;
+	  display: flex;
+	  margin: auto;
+	  border-radius: 5px;
+	}
+	.wpcf7 form.sent .wpcf7-response-output {
+	  border-color: #a02320;
+  }
+  }
+  #ModalSearch form div button {
+	background-color: #a02320 !important;
+}
+#ModalSearch form div input[type="search"] {
+	border: 2px solid #a02320!important;
+}
+  //formulario de contacto
+  .wc-block-components-sidebar-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 16px;
+    position: relative;
+}
+.wp-block-woocommerce-cart{
+	margin: 0 50px;
+  }

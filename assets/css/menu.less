@@ -26,7 +26,7 @@ header::before {
 	width: 100%;
 	background-color: #a02320;
 	display: flex;
-	height: 50px;
+	height: 30px;
 }
 
 .fijo header {
@@ -49,13 +49,13 @@ header::before {
 	}
 
 	nav.el-menu .menu-ppl ul li a {
-		color: white !important;
+		color: black;
 	}
 
-	.options_shop .account:before,
-	.options_shop .cart .btn-cart {
-		filter: contrast(0) grayscale(1) brightness(0) invert(1) !important
-	}
+	// .options_shop .account:before,
+	// .options_shop .cart .btn-cart {
+	// 	filter: contrast(0) grayscale(1) brightness(0) invert(1) !important
+	// }
 
 	.container-menu-buscador {
 		// .buscador .menu-btn-hiden {
@@ -215,7 +215,7 @@ header::before {
 						display: inline-block;
 						border-top-right-radius: 25px;
 						border-bottom-right-radius: 25px;
-						background-color: #A5DBD6;
+						background-color: #a02320 !important;
 						margin-left: 7px;
 						font-size: 0;
 						width: 60px;
@@ -226,6 +226,7 @@ header::before {
 						background-size: 35%;
 						border: none;
 						outline: none;
+						margin-top: 20px;
 					}
 				}
 			}
@@ -340,9 +341,8 @@ header::before {
 						&:hover>a,
 						>a:focus,
 						&.in-hover>a {
-							font-weight: 800;
+							font-weight: 500;
 							transition: all 0.5s;
-							text-shadow: 1px 1px black;
 						}
 					}
 
@@ -488,7 +488,7 @@ header::before {
 									text-align: left;
 
 									&>a {
-										color: #111 !important;
+										color: white !important;
 										text-align: left;
 
 										&:hover {
@@ -563,7 +563,7 @@ header::before {
 						right: -5000px;
 						top: -1px;
 						list-style: none;
-						background-color: #68c0b1;
+						background-color: #a02320;
 						opacity: 0;
 						z-index: 100000;
 						.transition(right, 0, linear, 0.6, opacity, 0.3, linear, 0.3);
@@ -577,7 +577,8 @@ header::before {
 
 					li:hover>a,
 					li a:focus {
-						background-color: #f4b0ba;
+						background-color: white;
+						color: black;
 					}
 				}
 
@@ -619,7 +620,8 @@ header::before {
 		align-items: center;
 
 		.account {
-			display: inline-block;
+
+			display: none;
 			vertical-align: middle;
 			.font-size(0);
 			font-family: @fuenteComun;
@@ -650,7 +652,7 @@ header::before {
 				background-position: center;
 				background-size: 70%;
 				transition: all 0.2s;
-				filter: contrast(0) grayscale(1) brightness(0) invert(1) !important
+				filter: brightness(0) saturate(100%)
 			}
 		}
 
@@ -700,7 +702,7 @@ header::before {
 				display: block;
 				width: 30px;
 				height: 30px;
-				background-image: url('@{imgurl}cart.svg');
+				background-image: url('@{imgurl}iconos-ricuras.svg');
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: 90%;
@@ -768,12 +770,12 @@ header::before {
 	width: 42px;
 	height: 42px;
 	.border-radius(2px);
-	border: 2px solid white;
+	border: 2px solid #a02320;
 	overflow: hidden;
 	position: relative;
 
 	span {
-		background-color: white;
+		background-color: #a02320;
 		width: 75%;
 		height: 4px;
 		display: block;

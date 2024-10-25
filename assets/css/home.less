@@ -1,0 +1,371 @@
+.nuestros-productos {
+    padding: 100px 0;
+
+    .ancho {
+        .info {
+            width: 60%;
+            margin: 0 auto;
+
+            h2 {
+                .font-size(2.5);
+                font-weight: 700;
+            }
+
+            img {
+                width: 100px !important;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .splide_nuestro_productos {
+            padding-top: 50px;
+            position: relative;
+
+            li {
+                padding: 0 10px;
+
+                .producto {
+                    position: relative;
+
+                    .content {
+                        z-index: 10;
+                        position: relative;
+                    }
+
+                    img {
+                        border-radius: 50%;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        border: 5px solid @primario
+                    }
+
+                    .content-text {
+                        background: #fff3e1;
+                        border: 4px dotted;
+                        border-radius: 40px;
+                        margin-top: -50px;
+                        padding: 15px;
+                        padding-top: 75px;
+                        z-index: 1;
+
+                        h3 {
+                            text-align: center;
+                            line-height: 1rem;
+
+                            a {
+                                font-weight: 600;
+                                .font-size(1);
+                                min-height: 34px;
+                                display: block;
+                            }
+                        }
+
+                        a.btn {
+                            width: 100%;
+                            border-radius: 25px;
+                            padding: 5px;
+                            font-weight: 600;
+                            color: @secundario;
+                            background-color: @primario;
+
+                            &:hover {
+                                color: @primario;
+                                background-color: @secundario;
+                            }
+                        }
+                    }
+                }
+            }
+            .splide__arrows{
+                .splide__arrow--prev{
+                    left: -1em;
+                }
+                .splide__arrow--next{
+                    right: -1em;
+                }
+            }
+            .splide__arrow{
+                background: white;
+                border: 2px solid #a02320;
+            }
+            .splide__arrow svg{
+                display: none;
+            }
+            .splide__arrow--prev::after{
+                content: "";
+                background-image: url("@{imgurl}flecha.svg");
+                transform: scaleX(-1);
+                width: 50%;
+                height: 50%;
+                color: black;
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            .splide__arrow::after{
+                content: "";
+                background-image: url(../images/flecha.svg);
+                width: 50%;
+                height: 60%;
+                color: black;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            //splide slide
+            .splide__pagination li button{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// promociones
+
+.promociones {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.promocionesmb {
+    display: none;
+}
+
+
+// productos destacados
+.destados {
+    padding: 100px 0;
+
+    .ancho {
+        .info {
+            width: 60%;
+            margin: 0 auto;
+
+            h2 {
+                .font-size(2.5);
+                font-weight: 700;
+            }
+
+            img {
+                width: 100px !important;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .productos-destacod {
+            position: relative;
+            li {
+                padding: 15px;
+
+                .producto {
+                    max-width: 300px;
+                    box-shadow: 4px 4px 5px #00000094;
+                    border-radius: 20px;
+                    margin: 0 auto;
+
+                    .content {
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 75px;
+                            height: 75px;
+                            right: 15px;
+                            bottom: 5px;
+                            background-color: @secundario;
+                            border-radius: 50%;
+                            background-image: url('https://sitios.plastimedia.com/ricuras/wp-content/uploads/2024/10/Wireframe-R-17.png');
+                            background-size: 60%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            z-index: 10;
+                        }
+
+                        img {
+                            border-radius: 20px 20px 0 0;
+                        }
+
+                        .btn {
+                            font-weight: 700;
+                            border-radius: 20px;
+                            .font-size(1.2);
+                            border: none;
+                            background-color: @secundario;
+                            color: @primario;
+                            position: absolute;
+                            bottom: 15px;
+                            left: 15px;
+                            padding: 10px 15px;
+                            transition: all 0.5s;
+                            &:hover{
+                                background-color: @primario;
+                                color: @secundario;
+                            }
+                        }
+                    }
+
+                    .content-text {
+                        background-color: @primario;
+                        border-radius: 0 0 20px 20px;
+                        padding: 15px;
+                        box-shadow: inset 0 6px 5px #00000063;
+
+                        h3 {
+                            a {
+                                background-color: @secundario;
+                                color: @primario;
+                                padding: 5px 10px;
+                                border-radius: 25px;
+                                font-weight: 700;
+                                font-size: 1rem;
+                                display: inline-block;
+                                line-height: 1rem;
+                            }
+                        }
+
+                        p {
+                            color: @secundario;
+                            font-weight: 400;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+            .splide__arrow{
+                background: white;
+                border: 2px solid #a02320;
+                .splide__arrow--prev{
+                    left: -1em;
+                }
+                .splide__arrow--next{
+                    right: -1em;
+                }
+            }
+            .splide__arrow svg{
+                display: none;
+            }
+            .splide__arrow--prev::after{
+                content: "";
+                background-image: url("@{imgurl}flecha.svg");
+                transform: scaleX(-1);
+                width: 50%;
+                height: 50%;
+                color: black;
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+            .splide__arrow::after{
+                content: "";
+                background-image: url(../images/flecha.svg);
+                width: 50%;
+                height: 60%;
+                color: black;
+                -webkit-filter: invert(1);
+                filter: invert(1);
+                padding: 0 12px;
+                background-repeat: no-repeat;
+            }
+             //splide slide
+            .splide__pagination li button{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+// quienes somos
+
+.quienes-somos{
+    padding: 100px 0;
+    background-color: #fdfaf1;
+    .ancho{
+        .info {
+            width: 60%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+
+            h2 {
+                .font-size(2.5);
+                font-weight: 700;
+            }
+
+            img {
+                width: 100px !important;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+        .content{
+            figure{
+                text-align: center;
+                padding-bottom: 25px;
+            }
+            p{
+                font-weight: 500;
+                .font-size(1.1)
+            }
+        }
+    }
+}
+
+// recetas
+.recetas{
+    background-image: url("@{imgurl}fondo-recetas.png");
+    padding: 100px 0;
+    .listadorecetas{
+        padding-top: 50px;
+        .receta{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            .img{
+                img{
+                    width: 300px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+            .content{
+                width: 350px;
+                h3{
+                    line-height: 1.5rem;
+                    a{
+                        font-weight: 700;
+                    }
+                }
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
