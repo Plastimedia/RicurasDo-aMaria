@@ -4043,6 +4043,14 @@ span.woocommerce-input-wrapper {
   color: #555;
   background-color: #f0f1f3;
 }
+.formulario-dos-columnas .form-group input[type="submit"] {
+  background-color: #a02320;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 10px 0;
+  border-radius: 20px;
+}
 .formulario-dos-columnas .form-group textarea {
   padding: 10px;
   border: 1px solid #ccc;
@@ -4067,6 +4075,8 @@ span.woocommerce-input-wrapper {
   padding: 10px 50px;
   color: white;
   margin-top: 50px;
+  font-weight: 500;
+  border-radius: 20px;
 }
 .sticky-wrapper {
   max-height: 0;
@@ -4903,6 +4913,8 @@ header::before {
           filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrow::after {
   content: "";
@@ -4914,6 +4926,8 @@ header::before {
   filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__pagination li button {
   display: none;
@@ -5049,6 +5063,8 @@ header::before {
           filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .destados .ancho .productos-destacod .splide__arrow::after {
   content: "";
@@ -5060,6 +5076,8 @@ header::before {
   filter: invert(1);
   padding: 0 12px;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(52%) saturate(4850%) hue-rotate(353deg) brightness(88%) contrast(83%);
 }
 .destados .ancho .productos-destacod .splide__pagination li button {
   display: none;
