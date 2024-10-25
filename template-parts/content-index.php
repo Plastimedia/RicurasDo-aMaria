@@ -9,13 +9,13 @@
 
 
 <section class="nuestros-productos">
-  <div class="ancho wow animate__animated animate__backInUp">
+  <div class="ancho">
     <div class="info">
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Nuestros Poductos')): ?>
       <?php endif; ?>
     </div>
 
-    <div class="splide_nuestro_productos">
+    <div class="splide_nuestro_productos wow animate__animated animate__backInUp">
       <div class="splide__track">
         <ul class="splide__list products">
           <?php
@@ -80,7 +80,7 @@
       <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Productos Destacados')): ?>
       <?php endif; ?>
     </div>
-    <div class="productos-destacod">
+    <div class="productos-destacod wow animate__animated animate__fadeInDown">
       <div class="splide__track">
         <ul class="splide__list products">
           <?php
@@ -174,8 +174,10 @@
         while ($blogs->have_posts()):
 
           $blogs->the_post();
+          $post_count++;
+          $animation_class = ($post_count % 2 == 0) ? 'wow animate__animated animate__slideInRight' : 'wow animate__animated animate__slideInLeft';
           ?>
-          <div class="receta">
+          <div class="receta <?php echo $animation_class; ?>">
             <div class="img">
               <?php the_post_thumbnail('thumbnail'); ?>
             </div>
