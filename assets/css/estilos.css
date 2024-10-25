@@ -2213,6 +2213,11 @@ main.shopPage section.contenido .productPage .related h2::before {
   height: 3px;
   border-radius: 3px;
 }
+main .wc-block-cart .wc-block-cart__submit-container {
+  padding: 0;
+  background-color: #fff3e1;
+  border: 1px solid;
+}
 .the-posts {
   display: block;
   margin: 0 -10px;
@@ -2288,6 +2293,10 @@ main.shopPage section.contenido .productPage .related h2::before {
 }
 .post-area > h3 a:hover {
   color: #a02320;
+}
+.contenedor .title-recetas h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 .contenedor {
   display: block;
@@ -3859,6 +3868,10 @@ span.woocommerce-input-wrapper {
   font-size: 17px;
   font-size: 1rem;
 }
+.archive .producto .precios,
+.single-product .producto .precios {
+  margin-left: 15px;
+}
 .archive .producto .precios p,
 .single-product .producto .precios p {
   font-weight: 700;
@@ -4970,10 +4983,10 @@ header::after {
   background-color: #fff3e1;
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev {
-  left: -1em;
+  left: -2em;
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next {
-  right: -1em;
+  right: -2em;
 }
 .nuestros-productos .ancho .splide_nuestro_productos .splide__arrow {
   background: white;
@@ -5124,10 +5137,10 @@ header::after {
   border: 2px solid #a02320;
 }
 .destados .ancho .productos-destacod .splide__arrow .splide__arrow--prev {
-  left: -1em;
+  left: -2em;
 }
 .destados .ancho .productos-destacod .splide__arrow .splide__arrow--next {
-  right: -1em;
+  right: -2em;
 }
 .destados .ancho .productos-destacod .splide__arrow svg {
   display: none;
@@ -5962,6 +5975,12 @@ header::after {
     padding: 15px 10px !important;
     background: white !important;
     margin-top: -13px;
+  }
+  .nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--prev {
+    left: -1em;
+  }
+  .nuestros-productos .ancho .splide_nuestro_productos .splide__arrows .splide__arrow--next {
+    right: -1em;
   }
   .promociones {
     display: none;
@@ -6942,6 +6961,10 @@ header::after {
   .algunosproyectos .ancho .proyectos .ancho .proyecto {
     width: 100%;
     margin: 10px 0;
+  }
+  .contenedor .title-recetas h1 {
+    margin-bottom: 50px;
+    margin-top: -50px;
   }
   main section.categorias .ancho .grid-categorias .category .content .thumbnail img {
     opacity: 0.6;
