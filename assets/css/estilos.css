@@ -1242,7 +1242,7 @@ main .wishlist-table tbody tr td a:hover::before {
           box-shadow: 0px 5px 6px 2px #a02320;
 }
 main.mainHome {
-  padding: 0;
+  padding: 150px 0;
 }
 main .woocommerce-MyAccount-navigation {
   background: #f2f2f2;
@@ -4003,117 +4003,56 @@ span.woocommerce-input-wrapper {
   padding: 10px;
   border-radius: 5px;
 }
-.wp-block-contact-form-7-contact-form-selector {
+.formulario-dos-columnas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-.wp-block-contact-form-7-contact-form-selector .wpcf7 {
-  background-color: #f3e1;
-  padding: 50px;
-  border-radius: 10px;
+.formulario-dos-columnas .columna {
+  width: 100%;
 }
-.wp-block-contact-form-7-contact-form-selector form label {
+.formulario-dos-columnas .formulario {
+  padding: 20px;
+  border-radius: 8px;
+}
+.formulario-dos-columnas .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.formulario-dos-columnas .form-group label {
   font-weight: bold;
+  margin-bottom: 5px;
 }
-.wp-block-contact-form-7-contact-form-selector form label span input {
-  border-radius: 10px;
-  border: 1px solid #a02320;
-}
-.wp-block-contact-form-7-contact-form-selector .wpcf7-submit {
-  background-color: #a02320;
-  color: white;
-  border: none;
-  width: 50%;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  border-radius: 5px;
-}
-.wp-block-contact-form-7-contact-form-selector .wpcf7 form.sent .wpcf7-response-output {
-  border-color: #a02320;
-}
-.wc-block-components-sidebar-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 50px 16px;
-  position: relative;
-}
-.wc-block-components-button:not(.is-link).outlined:hover {
-  background-color: #893836;
-  color: #fff;
-  opacity: 1;
-}
-/* Estilos básicos para el formulario */
-.wpcf7 form {
-  max-width: 100%;
-  width: 100%;
-  /* Asegura que ocupe todo el ancho del contenedor */
+.formulario-dos-columnas .form-group input[type="text"],
+.formulario-dos-columnas .form-group input[type="email"],
+.formulario-dos-columnas .form-group input[type="tel"] {
   padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-/* Estilos para los campos de entrada y textarea */
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"],
-.wpcf7 input[type="tel"],
-.wpcf7 input[type="url"],
-.wpcf7 input[type="number"],
-.wpcf7 input[type="date"],
-.wpcf7 textarea {
-  width: 100%;
-  /* Ocupa el 100% del ancho del contenedor */
-  padding: 10px;
+  box-sizing: border-box;
   margin-bottom: 10px;
-  /* Añade espacio entre los campos */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* Asegura que el padding no exceda el ancho */
+  font-size: 14px;
+  color: #555;
+  background-color: #f0f1f3;
 }
-/* Estilos para los select y botones */
-.wpcf7 select,
-.wpcf7 input[type="submit"] {
-  width: 100%;
-  /* Asegura que el botón se ajuste al contenedor */
+.formulario-dos-columnas .form-group textarea {
   padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-/* Ajustes para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .wpcf7 form {
-    padding: 15px;
-    /* Aumenta el padding en pantallas pequeñas */
-  }
-  .wpcf7 input[type="submit"] {
-    font-size: 16px;
-    /* Ajusta el tamaño de fuente del botón */
-  }
-}
-/* Uso de Flexbox para alinear campos en filas */
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px;
-}
-.flex-row .wpcf7-form-control {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc(50% - 10px);
-          flex: 1 1 calc(50% - 10px);
-  /* Hace que cada campo ocupe el 50% del ancho */
-  min-width: 150px;
-  /* Un ancho mínimo para evitar colapsos */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
 }
 .content-leermas {
   display: -webkit-box;
@@ -5748,6 +5687,9 @@ header::before {
     padding: 0 25px;
     width: 100%;
     margin: 0 auto;
+  }
+  .mainHome {
+    padding: 0 !important;
   }
   .contenedor-slide-mobil .metaslider .caption-wrap {
     position: absolute;
