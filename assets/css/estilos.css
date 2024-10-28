@@ -1309,7 +1309,7 @@ main .splide--slide .splide__arrows .splide__arrow--next svg {
 }
 main.shopPage {
   padding-bottom: 60px;
-  padding-top: 88px;
+  padding-top: 150px;
 }
 main.shopPage .migas {
   background: #fff;
@@ -1677,6 +1677,7 @@ main.shopPage section.contenido .productos-cantidades {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 15px;
 }
 main.shopPage section.contenido .productos-cantidades li {
   padding: 5px;
@@ -1963,7 +1964,7 @@ main.shopPage section.contenido .productPage .summary .cart_b2b .quantity input 
   width: 40px;
   color: #464646;
   margin: 20px 0;
-  border: 1px solid #000000;
+  border: 1px solid #a02320;
   height: 30px;
 }
 main.shopPage section.contenido .productPage .summary .cart .quantity button,
@@ -1978,7 +1979,7 @@ main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border: 1px solid #000000;
+  border: 1px solid #a02320;
   background: #a02320;
 }
 main.shopPage section.contenido .productPage .summary .cart .quantity button:last-child,
@@ -1987,7 +1988,8 @@ main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button
 }
 main.shopPage section.contenido .productPage .summary .cart .quantity button:hover,
 main.shopPage section.contenido .productPage .summary .cart_b2b .quantity button:hover {
-  background: #E9DA7F;
+  background: #fff3e1;
+  color: #a02320;
 }
 main.shopPage section.contenido .productPage .summary .cart button,
 main.shopPage section.contenido .productPage .summary .cart_b2b button {
@@ -3881,18 +3883,22 @@ span.woocommerce-input-wrapper {
 }
 .archive .producto .botones2 .read,
 .single-product .producto .botones2 .read {
-  color: white;
-  background-color: #330906;
+  color: #a02320;
+  background-color: #fff3e1;
   font-size: 17px;
   font-size: 1rem;
   font-weight: 700;
   padding: 9px 20px;
-  border-radius: 10px;
+  border-radius: 25px;
+}
+.archive .producto .botones2 .read:hover,
+.single-product .producto .botones2 .read:hover {
+  background-color: #330906;
+  color: #fff3e1;
 }
 .archive .producto,
 .single-product .producto {
   width: 250px;
-  padding: 2px;
   border-radius: 30px;
   overflow: hidden;
   margin: 0 auto;

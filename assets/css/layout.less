@@ -468,7 +468,7 @@ main {
   &.shopPage {
     // padding: 0;
     padding-bottom: 60px;
-    padding-top: 88px;
+    padding-top: 150px;
 
     .migas {
       // background: @quinto;
@@ -873,7 +873,7 @@ main {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-
+        gap: 15px;
         li {
           padding: 5px;
           width: auto;
@@ -1207,7 +1207,7 @@ main {
                 // border-radius: 10px;
                 color: #464646;
                 margin: 20px 0;
-                border: 1px solid @tercero;
+                border: 1px solid #a02320;
                 height: 30px;
               }
 
@@ -1222,7 +1222,7 @@ main {
                 cursor: pointer;
                 -webkit-transition: all 0.5s;
                 transition: all 0.5s;
-                border: 1px solid #000000;
+                border: 1px solid #a02320;
                 background: #a02320;
 
                 &:last-child {
@@ -1230,7 +1230,8 @@ main {
                 }
 
                 &:hover {
-                  background: #E9DA7F;
+                  background: #fff3e1;
+                  color: #a02320;
 
 
                 }
@@ -3196,18 +3197,22 @@ span.woocommerce-input-wrapper {
     }
 
     .botones2 .read {
-      color: white;
-      background-color: #330906;
+      color: #a02320;
+      background-color: #fff3e1;
       .font-size(1);
       font-weight: 700;
       padding: 9px 20px;
-      border-radius: 10px;
+      border-radius: 25px;
+      
+      &:hover{
+        background-color: #330906;
+        color: #fff3e1;
+      }
     }
     
   }
   .producto{
     width: 250px;
-    padding: 2px;
     border-radius: 30px;
     overflow: hidden;
     margin: 0 auto;
