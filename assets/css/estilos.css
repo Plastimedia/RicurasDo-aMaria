@@ -4081,7 +4081,7 @@ span.woocommerce-input-wrapper {
   font-weight: 500;
   border-radius: 20px;
 }
-#title-resondoski {
+.circular-text {
   display: block;
   position: relative;
   width: 1024px;
@@ -4089,13 +4089,12 @@ span.woocommerce-input-wrapper {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-#title-resondoski span {
+.circular-text span {
   position: absolute;
   height: 612px;
   width: 30px;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  color: black;
 }
 .sticky-wrapper {
   max-height: 0;
@@ -4909,6 +4908,12 @@ header::after {
   font-size: 2.5rem;
   font-weight: 700;
 }
+.nuestros-productos .ancho .info h2 span {
+  font-size: 42.5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a02320;
+}
 .nuestros-productos .ancho .info img {
   width: 100px !important;
   margin-bottom: 15px;
@@ -5031,6 +5036,12 @@ header::after {
   font-size: 42.5px;
   font-size: 2.5rem;
   font-weight: 700;
+}
+.destados .ancho .info h2 span {
+  font-size: 42.5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a02320;
 }
 .destados .ancho .info img {
   width: 100px !important;
@@ -5196,6 +5207,12 @@ header::after {
   font-size: 42.5px;
   font-size: 2.5rem;
   font-weight: 700;
+}
+.quienes-somos .ancho .info h2 span {
+  font-size: 42.5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a02320;
 }
 .quienes-somos .ancho .info img {
   width: 100px !important;

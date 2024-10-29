@@ -258,17 +258,29 @@ $(document).ready(function () {
 
 
 
-	// btn servicio técnico
 	// circular-text
-	// circle = document.getElementById("title-resondoski")
-	// console.log("circle", circle)
-	// circleArray = circle.textContent.split('')
-	// circle.textContent = ''
-
-	// for (var i = 0; i < circleArray.length; i++) {
-	// 	circle.innerHTML += '<span style="transform: rotate(' + (i * 3) + 'deg)">' + circleArray[i] + '</span>'
-	// }
-
-	// 
-
+	
+	circularText("title-nuestros-productos")
+	circularText("title-destacados-productos")
+	circularText("title-quenes")
+	
+	
 });
+
+
+// circular-text
+function circularText(id){
+	var circle = document.getElementById(id)
+	circleArray = circle.textContent.split('')
+	circle.textContent = ''
+	var longitdTexto =  0
+
+	for (var i = 0; i < circleArray.length; i++) {
+		circle.innerHTML += '<span style="transform: rotate(' + (i * 3) + 'deg)">' + circleArray[i] + '</span>'
+		longitdTexto = i
+	}
+	
+	circle.style.transform = 'rotate(' + (-longitdTexto * 3 / 2) + 'deg) translateX(-50%)';
+	circle.style.width = `${(longitdTexto + 1) * 30}px`
+	circle = ''
+}
