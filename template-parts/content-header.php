@@ -45,7 +45,7 @@
                 <?php
             else:
                 ?>
-                <a href="https://sitios.plastimedia.com/rapeluches/mi-cuenta/orders/" class="account">Mi cuenta</a>
+                <a href="https://sitios.plastimedia.com/ricuras/my-account" class="account">Mi cuenta</a>
                 <?php
             endif;
             ?>

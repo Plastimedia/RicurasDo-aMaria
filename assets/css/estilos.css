@@ -4745,7 +4745,6 @@ header::after {
   padding-bottom: 15px;
 }
 .container-menu .options_shop .account {
-  display: none;
   vertical-align: middle;
   font-size: 0px;
   font-size: 0rem;
@@ -4758,6 +4757,8 @@ header::after {
   margin-right: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
+          filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(3022%) hue-rotate(342deg) brightness(97%) contrast(97%);
 }
 .container-menu .options_shop .account::before {
   content: '';
